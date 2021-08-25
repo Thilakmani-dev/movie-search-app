@@ -7,8 +7,8 @@ function MoviePage(props) {
     console.log(props);
     const detail = JSON.parse(props.location.query.details);
     return (
-        <Container className="mx-1 my-2 py-2 px-2">
-            <Row style={{height:'300px'}}>
+        <Container className="mx-1 my-2">
+            <Row style={{height:'300px'}} className="my-2 mx-2">
                 <Col sm="4">
                 <img src={image_key + detail.poster_path} alt={detail.title} style={{height:'300px',width:'auto'}}/>
                 </Col>
